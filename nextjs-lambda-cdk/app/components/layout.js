@@ -1,12 +1,12 @@
-import Head from 'next/head';
-import Image from 'next/image';
-import Link from 'next/link';
+import Head from 'next/head'
+import Image from 'next/image'
+import Link from 'next/link'
 
-import styles from './layout.module.css';
-import utilStyles from '../styles/utils.module.css';
+import styles from './layout.module.css'
+import utilStyles from '../styles/utils.module.css'
 
-const name = 'Next.js applications with Serverless services on AWS';
-export const siteTitle = 'Next.js Sample Website';
+const name = 'Next.js applications with Serverless services on AWS'
+export const siteTitle = 'Next.js Sample Website'
 
 const Layout = ({ children, home }) => {
   return (
@@ -20,7 +20,7 @@ const Layout = ({ children, home }) => {
         <meta
           property="og:image"
           content={`https://og-image.vercel.app/${encodeURI(
-            siteTitle,
+            siteTitle
           )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
         />
         <meta name="og:title" content={siteTitle} />
@@ -45,10 +45,10 @@ const Layout = ({ children, home }) => {
               <a>
                 <Image
                   priority
-                  src="/static/images/AWS.svg"
+                  src="/static/images/deepmind.jpg"
                   className={utilStyles.borderCircle}
-                  height={108}
-                  width={108}
+                  height={200}
+                  width={200}
                   alt={name}
                 />
               </a>
@@ -73,4 +73,4 @@ const Layout = ({ children, home }) => {
   )
 }
 
-export default Layout;
+export default Layout
